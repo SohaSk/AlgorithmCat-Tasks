@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* General styles */
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/* Homepage styles */
+.homepage {
+  background-image: url('background.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage .container {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.homepage h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.homepage p {
+  font-size: 20px;
+}
+
+/* Contact overlay styles */
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  background-color: white; /* Contact container background color */
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 182px;
+  right: 602px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  color: black;
+  font-size: 14px;
+}
+
+.close-btn:hover {
+  background-color: #555;
+}
+
+
+    </style>
+
+  <div class="homepage">
+    <div class="overlay"></div>
+    <div class="container">
+        
+      <h1>Welcome to Our Website</h1>
+      <p>Explore our products and services.</p>
+    </div>
+  </div>
+
+  <div class="contact-overlay hide-contact">
+  <div class="contact-container">
+    <button class="close-btn" onclick="toggleContact()">Close</button>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="post" id="contactForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="submit-button">Submit</button>
+          </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    function toggleContact() {
+      document.querySelector('.contact-overlay').classList.toggle('hide-contact');
+    }
+  </script>
+
+</body>
+</html>

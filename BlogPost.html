@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Post Title</title>
+    <style>
+      
+/* styles.css */
+
+/* Basic styling for the whole page */
+/* styles.css */
+
+/* Basic styling for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+}
+
+#post-content {
+    line-height: 1.6;
+    color: #555;
+}
+
+#author-info {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    color: #777;
+}
+
+.comments {
+    margin-top: 30px;
+}
+
+/* Styling for individual comments */
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    color: #444;
+    border-radius: 5px;
+}
+
+.date {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Styling for comment submission form */
+#comment-form {
+    margin-top: 20px;
+}
+
+#comment {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <h1>Blog Post Title: The Importance of Mindfulness in Everyday Life</h1>
+        
+        <div id="post-content">
+            <p>
+                In today's fast-paced world, finding moments of peace and clarity can be a challenge. Amidst the chaos of daily life, practicing mindfulness has emerged as a powerful tool for enhancing well-being and reducing stress.
+
+Mindfulness involves paying attention to the present moment without judgment. It encourages a heightened awareness of thoughts, feelings, and sensations as they arise, fostering a deeper connection with oneself and the surrounding environment.
+
+Research has shown that integrating mindfulness practices into one's routine can lead to various benefits. From reducing anxiety and improving focus to enhancing overall mental resilience, its impact on mental health is profound. Moreover, cultivating mindfulness can positively influence physical health by lowering blood pressure, improving sleep quality, and boosting the immune system.
+
+Incorporating mindfulness doesn't necessarily require hours of meditation. Simple activities like deep breathing exercises, mindful eating, or taking short breaks to appreciate the environment can significantly contribute to a more mindful lifestyle.
+
+In essence, mindfulness serves as a guiding principle to navigate life's challenges with a calmer and more composed mindset. By fostering a non-judgmental awareness of the present moment, individuals can experience greater fulfillment and joy in their everyday lives.
+
+
+            </p>
+        </div>
+
+        <div id="author-info">
+            <h3>Author Information:</h3>
+            <p>Author: Sarah Johnson</p>
+            <p>Bio: Sarah Johnson is a mindfulness advocate and certified yoga instructor. With a passion for promoting mental well-being, she combines her expertise in yoga and mindfulness practices to help individuals achieve balance and inner peace. Sarah believes in the transformative power of mindfulness in everyday life and aims to inspire others to embrace this practice for holistic well-being.</p>
+        </div>
+
+        <div class="comments">
+            <h3>Comments:</h3>
+            <div id="comments-list"></div>
+            <form id="comment-form">
+                <label for="comment">Leave your comment:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="Blogpost.js"></script>
+</body>
+</html>
